@@ -4,7 +4,7 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
-const port = 3000
+const port = process.env.PORT || 3000
 
 const server = express()
 
@@ -107,7 +107,7 @@ server.get('*', (req, res) => {
 
 // Start server last
 server.listen(port, () => {
-    console.log('port '+ port + ' is running.')
+    console.log('Server running on port '+ port)
 })
 
 
