@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+        
+    <head>
+        <title>Weather</title>
+        {{>links}}
+    </head>
+
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <h2>{{moto}}</h2>
+            <form id="addressForm">
+                <input type='text' id="addressInput" placeholder="Address">
+                <button type="submit">Get Forecast</button>
+            </form>
+            <div class="forecast-window">
+                <p id="msg"></p>
+                <p id="location"></p>
+                <p id="forecast"></p>
+            </div>
+        </div>
+        {{>footer}}
+    </body>
+
+    <script src="js/scripts.js"></script>
+
+    
+</html>
