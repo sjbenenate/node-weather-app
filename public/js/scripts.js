@@ -1,5 +1,3 @@
-console.log('Client side JavaScript');
-
 const forecastMsg = document.getElementById('forecast')
 const locationMsg = document.getElementById('location')
 const errorMsg = document.getElementById('msg')
@@ -8,7 +6,7 @@ const addressInput = document.getElementById('addressInput')
 function getForecast(address) {
     fetch('/weather?address=' + address).then((response) => {
         response.json().then((data) => {
-            console.log(data)
+            //console.log(data)
             if (data.error) {
                 forecastMsg.textContent = ''
                 locationMsg.textContent = ''

@@ -58,17 +58,6 @@ server.get('/help/*', (req, res) => {
     })
 })
 
-/*server.get('/products', (req, res) => {
-    if(!req.query.search) {
-        return res.send({
-            error: 'Search not provided.'
-        })
-    }
-    res.send({
-        products: req.query.search
-    })
-})*/
-
 server.get('/weather', (req, res) => {
     if(!req.query.address) {
         return res.send({

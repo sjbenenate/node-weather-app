@@ -27,7 +27,8 @@ const forecast = (latitude, longitude, callback) => {
             currentPercip = Math.round(forecastResponse.currently.precipProbability)
             summary = forecastResponse.currently.summary
 
-            callback(undefined, summary + '. Currently ' + currentTemp + 'F. High today of ' + dailyHigh + 'F at ' + highTime + '. Low today of ' + dailyLow + 'F at ' + lowTime + '.')
+            //callback(undefined, summary + '. Currently ' + currentTemp + 'F. High today of ' + dailyHigh + 'F at ' + highTime + '. Low today of ' + dailyLow + 'F at ' + lowTime + '.')
+            callback(undefined, summary + '. Currently ' + currentTemp + 'F. High today of ' + dailyHigh + 'F ' + '. Low today of ' + dailyLow + 'F.')
         }
     })
    
